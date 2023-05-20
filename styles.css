@@ -12,7 +12,7 @@ body{
   font-weight: 500;
 }
 
-.container{
+ .container{
   width: 70%;
   margin: 40px auto;
 }
@@ -72,21 +72,36 @@ button:hover{
 }
 
 .sec1{
+  margin: auto 10vw ;
+  display: flex;
+  justify-content: space-between;
   position: relative;
-  width: 100%;
+  /* width: 90%; */
+  /* max-width: 1200px; */
+/*   overflow: hidden; */
+
+@media screen and (max-width: 768px){
+  .sec1{
+    flex-wrap: wrap-reverse;
+  }.workmg{
+  width: 90vw;
+  margin: 0 10px;
 }
+}
+  
+
 .heading{
   color:hsl(260, 8%, 14%);
-  margin-top:190px;
-  font-size: 100px;
-  line-height: 110px;
+  margin-top:80px;
+  font-size: 7vw;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+p{
   word-wrap: break-word;
 }
 .workImg{
-  width:50%;
-  min-width:500px;
-  float: right;
-  margin:0 -100px 0 0;
+  width: 50%;
 }
 .hline{
   width: 100%;
@@ -106,11 +121,15 @@ button:hover{
   color: #fff;
 }
 
+.shortlink{
+height: 1px;
+}
 .linkshort{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 100px auto;
   margin-top: 100px;
   padding-bottom: 20px;
   padding-right: 20px;
@@ -121,6 +140,7 @@ button:hover{
   min-height: 180px;
   border-radius: 15px;
   flex-wrap: wrap;
+  width: 80%;
 }
 .linkIn{
   flex: 1;
@@ -163,12 +183,66 @@ button:hover{
 .sec2{
   margin-top: 100px;
   margin-bottom: 100px;
+  background-color: hsl(260, 19%, 94%);
+
+}
+ .sec2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(260, 19%, 94%);
+  z-index: -999;
+  transform: translateY(-200px);
 }
 .advStatic{
   text-align: center;
   width:100%;
 }
+.advStatic h1{
+  padding-top: 200px;
+  font-size: 60px;
+  font-weight: 700;
+  color: hsl(260, 8%, 14%);
+  margin-bottom: 20px;
+  line-height: 80px;
+
+}
 .paraAs{
+  margin: 0 auto;
+  width: 70%;
+  font-size: 23px;
+  line-height: 40px;
+  color: hsl(258, 7%, 63%);
+  font-weight: 600;
 }
 
+.cardContainer{
+ display: flex;
+ width: 80%;
+ justify-content: space-around;
+ padding: 100px 0 ;
+ margin:20px auto;
+ position: relative;
+}
+.line{
+  width: 100%;
+  top: 50%;
+  border: 5px solid hsl(260, 8%, 14%);
+  z-index: 0;
+  position: absolute;
 
+}
+.card{
+  background-color: #432020;
+  padding: 35px;
+  width: 40%;
+  margin-right: 30px;
+  margin-top: 30px;
+  word-wrap: break-word;
+  z-index: 2;
+}
+.card3{
+  margin-right: 0;
+}
