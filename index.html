@@ -11,7 +11,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+    <title>Shortly</title>
 
     <style>
       .attribution {
@@ -22,50 +22,53 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar">
-        <a><img src="images/logo.svg" alt="" class="mainLogo" /></a>
 
-        <ul class="nav-links">
+    <!-- Navbar -->
+    <nav class="navbar flexr "> 
+      <div class="flexr">
+        <a href="#"> <img src="images/logo.svg" alt="" class="mainLogo" /></a>
+        <ul class="nav-links flexr">
           <li><a href="#">Features</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Resources</a></li>
-
-          <li><button class="login">Login</button></li>
-          <li><button class="signup">Sign Up</button></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+      <div class="flexc ">
+        <ul class="flexr" >
+          <li><button class="login button"><span>Login</span></button></li>
+          <li><button class="signup button"><span>SignUp</span></button></li>
+        </ul>
+      </div>
+    </nav>
 
-    <section class="sec1">
-      
-      
-      <div>
+
+
+    <section class="sec1 flexr">
+      <div class="flex">
         <h1 class="heading">More than just shorter links</h1>
         <p class="hline">
           Build your brand's recognition and get detailed insights on how your
           links are performing.
         </p>
-        <button class="getStarted">Get Started</button>
+        <button class="getStarted button"><span>Get Started</span></button>
       </div>
-      
-      
+
       <div class="workImg">
         <img src="images/illustration-working.svg" alt="" class="workmg" />
       </div>
-    
     </section>
-    
-    <div class="linkshort">
+
+   
+
+    <section class="sec2">
+       <div class="linkshort">
       <input type="text" placeholder="Shorten a link here..." class="linkIn" />
       <button class="shortenIt">Shorten It!</button>
       <p>Please add a link</p>
     </div>
-    
-    <section class="sec2">
-    
       <div class="advStatic">
         <h1 class="adStatic">Advanced Statistics</h1>
         <p class="paraAs">
@@ -73,7 +76,7 @@
         </p>
         <p class="paraAs">our Advanced statistics dashboard.</p>
       </div>
-    
+
       <div class="cardContainer">
         <div class="line"></div>
         <div class="card1 card">
